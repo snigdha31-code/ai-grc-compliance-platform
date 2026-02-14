@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+venv/
+.venv/
+env/
+ENV/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / runtime
+*.log
+data/logs/
+data/models/
+*.joblib
+
+# RAG / embeddings artifacts (big)
+data/faiss/
+*.index
+*.pkl
+
+# Local secrets
+.env
+.env.*

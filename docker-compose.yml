@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    container_name: grc_postgres
+    environment:
+      POSTGRES_USER: grc_user
+      POSTGRES_PASSWORD: grc_pass
+      POSTGRES_DB: grc_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - grc_pgdata:/var/lib/postgresql/data
+
+volumes:
+  grc_pgdata:
